@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "rafi021/laravel-package-example",
+    "description": "This is a laravel package demo",
     "keywords": [
-        ":vendor_name",
+        "rafi021",
         "laravel",
-        ":package_slug"
+        "laravel-package-example"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/rafi021/laravel-package-example",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "mahmud ibrahim",
+            "email": "ibrahim@shuttlebd.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Rafi021\\Example\\": "src/",
+            "Rafi021\\Example\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "Rafi021\\Example\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -61,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Rafi021\\Example\\ExampleServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Example": "Rafi021\\Example\\Facades\\Example"
             }
         }
     },
