@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class ExampleCommand extends Command
 {
-    public $signature = 'package';
+    public $signature = 'laravel-package-example';
 
     public $description = 'My command';
 
