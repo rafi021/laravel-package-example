@@ -1,6 +1,5 @@
 <?php
 
-
 use Rafi021\Example\Http\Controllers\MyController;
 
 it('has a route', function(){
