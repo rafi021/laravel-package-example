@@ -13,6 +13,3 @@ it('can return the uppercase value', function () {
     $mymodel = MyModel::factory()->create(['name' => 'ibrahim']);
     expect($mymodel->getUpperCasedName())->toEqual('IBRAHIM');
 });
-
-
-

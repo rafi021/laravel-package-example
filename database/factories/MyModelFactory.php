@@ -12,8 +12,7 @@ class MyModelFactory extends Factory
     public function definition()
     {
         return [
-            'name' => fake()->name
+            'name' => fake()->name,
         ];
     }
 }
-
