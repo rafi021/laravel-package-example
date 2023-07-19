@@ -2,7 +2,9 @@
 
 namespace Rafi021\Example;
 
+use Illuminate\Support\Facades\Route;
 use Rafi021\Example\Commands\ExampleCommand;
+use Rafi021\Example\Http\Controllers\MyController;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -21,5 +23,14 @@ class ExampleServiceProvider extends PackageServiceProvider
             // ->hasViews()
             ->hasMigration('create_my_models_table')
             ->hasCommand(ExampleCommand::class);
+    }
+
+    public function packageRegistered()
+    {
+        Route::macro('example', function(string $basrUrl = 'example'){
+            Route::prefix($basrUrl)->group(function(){
+                Route::get('/', [MyController::class, 'index']);
+            });
+        });
     }
 }
